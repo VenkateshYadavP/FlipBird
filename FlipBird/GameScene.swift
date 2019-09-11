@@ -72,7 +72,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(scorelabel)
 
     }
-    func createPipes() {
+    @objc func createPipes() {
         let gapHeight = bird.size.height * 4
         let movementOffset = arc4random() % UInt32(self.frame.height/2)
         let pipeOffset = CGFloat(movementOffset) - self.frame.height/4
